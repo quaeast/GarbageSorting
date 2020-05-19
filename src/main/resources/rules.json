@@ -1,0 +1,154 @@
+[
+  {
+    "conclusion": "厨余垃圾",
+    "conditions": [
+      "可以在短时间内自然降解"
+    ],
+    "isFinal": true
+  },
+  {
+    "conclusion": "有害垃圾",
+    "conditions": [
+      "重金属",
+      "有毒物质",
+      "危害坏境"
+    ],
+    "isFinal": true
+  },
+  {
+    "conclusion": "可回收垃圾",
+    "conditions": [
+      "废纸",
+      "塑料",
+      "玻璃",
+      "金属",
+      "布料"
+    ],
+    "isFinal": true
+  },
+  {
+    "conclusion": "其他垃圾",
+    "conditions": [
+      "其他三种垃圾种类之外",
+      "难以回收"
+    ],
+    "isFinal": true
+  },
+  {
+    "conclusion": "可以在短时间内自然降解",
+    "conditions": [
+      "剩饭剩菜",
+      "果皮树叶",
+      "骨头菜叶"
+    ],
+    "isFinal": false
+  },
+  {
+    "conclusion": "重金属",
+    "conditions": [
+      "水银温度计",
+      "难以回收"
+    ],
+    "final": false
+  },
+  {
+    "conclusion": "有毒物质",
+    "conditions": [
+      "过期药品",
+      "含有有毒有害物质的家电"
+    ],
+    "final": false
+  },
+  {
+    "conclusion": "危害环境",
+    "conditions": [
+      "电池",
+      "荧光灯管",
+      "灯泡",
+      "油漆桶",
+      "过期化妆品",
+      "汽车"
+    ],
+    "final": false
+  },
+  {
+    "conclusion": "废纸",
+    "conditions": [
+      "报纸",
+      "期刊",
+      "图书",
+      "各种包装纸"
+    ],
+    "final": false
+  },
+  {
+    "conclusion": "废纸",
+    "conditions": [
+      "报纸",
+      "期刊",
+      "图书",
+      "各种包装纸"
+    ],
+    "final": false
+  },
+  {
+    "conclusion": "塑料",
+    "conditions": [
+      "塑料袋",
+      "塑料泡沫",
+      "塑料包装",
+      "一次性塑料餐盒餐具",
+      "硬塑料",
+      "塑料牙刷",
+      "塑料杯子",
+      "矿泉水瓶"
+    ],
+    "final": false
+  },
+  {
+    "conclusion": "玻璃",
+    "conditions": [
+      "玻璃瓶",
+      "碎玻璃片",
+      "暖瓶"
+    ],
+    "final": false
+  },
+  {
+    "conclusion": "金属",
+    "conditions": [
+      "易拉罐",
+      "罐头盒"
+    ],
+    "final": false
+  },
+  {
+    "conclusion": "布料",
+    "conditions": [
+      "废弃衣服",
+      "桌布",
+      "洗脸巾",
+      "书包",
+      "鞋"
+    ],
+    "final": false
+  },
+  {
+    "conclusion": "其他三种垃圾种类之外",
+    "conditions": [
+      "尘土"
+    ],
+    "final": false
+  },
+  {
+    "conclusion": "难以回收",
+    "conditions": [
+      "烟盒",
+      "快递包装袋",
+      "镜子",
+      "尘土",
+      "大棒骨"
+    ],
+    "final": false
+  }
+]
