@@ -1,9 +1,22 @@
-# 北京垃圾分类专家系统
+# 北京垃圾分类专家系统 BJFU_AI_实验2
 
-## 技术参考
+## 项目
+
+### 依赖
 
 [alibaba FastJson](https://www.runoob.com/w3cnote/fastjson-intro.html)
 [Lombok](https://projectlombok.org/features/all)
+
+### 运行
+
+```shell script
+# test
+mvn test
+
+# run
+mvn package
+java -jar target/GarbageSorting*jar
+```
 
 ## 北京分类标准
 

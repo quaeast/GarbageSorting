@@ -3,7 +3,6 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.Value;
 
-import java.util.ArrayList;
 import java.util.List;
 
 
@@ -22,12 +21,13 @@ public class ExpertSystemRule {
         for (String i:conditions){
             boolean isExist = false;
             for (String j:this.conditions){
-                if (i.equalsIgnoreCase(j)){
+                if (i.equals(j)){
                     isExist = true;
+                    break;
                 }
-                if (!isExist){
-                    return false;
-                }
+            }
+            if (!isExist){
+                return false;
             }
         }
         return true;

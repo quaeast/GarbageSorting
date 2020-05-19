@@ -34,7 +34,6 @@ public class ExpertSystemRuleSet {
         byte[] fileContent = new byte[(int) jsonFile.length()];
         FileInputStream inputStream = new FileInputStream(jsonFile);
         int readLength = inputStream.read(fileContent);
-        System.out.println("read Length: " + readLength);
         String json = new String(fileContent);
 
         /*

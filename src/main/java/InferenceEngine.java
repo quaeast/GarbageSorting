@@ -1,23 +1,20 @@
-import lombok.Data;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 
 
-@Data
 public class InferenceEngine {
     private final ArrayList<String> database;
     ExpertSystemRuleSet expertSystemRuleSet;
     private boolean isInferred = false;
     private String Conclusion = null;
 
-    public InferenceEngine(String[] conditions) {
+    public InferenceEngine(String... conditions) {
         database = new ArrayList<>();
         database.addAll(Arrays.asList(conditions));
         expertSystemRuleSet = new ExpertSystemRuleSet();
     }
 
-    public void Infer() {
+    public void infer() {
         isInferred = true;
         for (int i = 0; i < expertSystemRuleSet.size(); i++) {
             ExpertSystemRule expertSystemRule = expertSystemRuleSet.get(i);
@@ -28,9 +25,16 @@ public class InferenceEngine {
                 }else {
                     database.clear();
                     database.add(expertSystemRule.getConclusion());
-                    Infer();
+                    infer();
                 }
             }
         }
+    }
+
+    public String getConclusion() {
+        if (!isInferred){
+            infer();
+        }
+        return Conclusion==null?"no conclusion":Conclusion;
     }
 }
