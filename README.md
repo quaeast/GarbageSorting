@@ -1,4 +1,9 @@
-# 垃圾分类专家系统
+# 北京垃圾分类专家系统
+
+## 技术参考
+
+[alibaba FastJson](https://www.runoob.com/w3cnote/fastjson-intro.html)
+[Lombok](https://projectlombok.org/features/all)
 
 ## 北京分类标准
 

@@ -2,8 +2,9 @@ import com.alibaba.fastjson.JSON;
 
 import java.io.*;
 import java.util.ArrayList;
+import java.util.List;
 
-public class Test {
+public class TestJsonIO {
     private static void testWrite() throws IOException {
         String[] condition = new String[]{"wang", "liu", "li"};
         ExpertSystemRule a = new ExpertSystemRule(condition, "fang", true);
@@ -23,8 +24,10 @@ public class Test {
         byte[] fileContent = new byte[(int) jsonFile.length()];
         FileInputStream inputStream = new FileInputStream(jsonFile);
         inputStream.read(fileContent);
-        String json = new String();
-        System.out.println(json);
+        String json = new String(fileContent);
+        System.out.println(JSON.parseArray(json, ExpertSystemRule.class).getClass());
+        List<ExpertSystemRule> list = JSON.parseArray(json, ExpertSystemRule.class);
+//        System.out.println(list.get(0));
     }
 
     public static void main(String[] args) {
