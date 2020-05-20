@@ -14,7 +14,7 @@ public class InferenceEngine {
         expertSystemRuleSet = new ExpertSystemRuleSet();
     }
 
-    public void infer() {
+    private void infer() {
         isInferred = true;
         for (int i = 0; i < expertSystemRuleSet.size(); i++) {
             ExpertSystemRule expertSystemRule = expertSystemRuleSet.get(i);
